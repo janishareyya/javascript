@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Division</h2>
+
+    <input type="number" id="fn">
+    <input type="number" id="sn">
+    <input type="Button" onclick="div()" value="click Here">
+
+    <script>
+        function div() {
+            let a= document.getElementById("fn").value;
+            a= parseInt(a);
+
+            let b= document.getElementById("sn").value;
+            b= parseInt(b);
+
+            const c= a/b;
+            alert(c);
+        }
+    </script>
+    
+</body>
+</html>

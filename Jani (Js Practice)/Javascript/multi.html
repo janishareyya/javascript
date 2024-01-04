@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Multiplication</h1>
+
+    <input type="number" id="fn">
+    <input type="number" id="sn">
+    <input type="button" onclick="multi()" value="click here">
+
+    <script>
+        function multi() {
+            let x= document.getElementById("fn").value;
+            x= parseInt(x);
+
+            let y= document.getElementById("sn").value;
+            y=parseInt(y);
+
+            const z= x*y;
+            alert(z);
+        }
+    </script>
+    
+</body>
+</html>

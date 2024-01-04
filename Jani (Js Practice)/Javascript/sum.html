@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic operators</title>
+</head>
+<body>
+    <h1>Addition</h1>
+
+    <input type="number" id="fn">
+    <input type="number" id="sn">
+    <input type="button" onclick="sum()" value="click">
+
+    <script> 
+    function sum() {
+        let x= document.getElementById("fn").value;
+         x= parseInt(x);
+        let y= document.getElementById("sn").value;
+        y= parseInt(y);
+
+        const z= x+y;
+        document.write(z);
+    }
+    </script>
+    
+</body>
+</html>
