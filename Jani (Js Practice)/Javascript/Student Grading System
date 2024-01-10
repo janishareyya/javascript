@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let subj1=+prompt("enter Telugu marks: ");
+       let subj2=+prompt("enter Hindimarks: ");
+       let subj3=+prompt("enter English marks: ");
+       let subj4=+prompt("enter Maths marks: ");
+       let subj5=+prompt("enter Science marks: ");
+       let subj6=+prompt("enter Social marks: ");
+       
+    let x="subj1>=35 && subj1<=100";
+    let y="subj2>=35 && subj2<=100";
+    let z=" subj3>=35 && subj3<=100";
+    let a="subj4>=35 && subj4<=100";
+    let b="subj5>=35 && subj5<=100";
+    let c="subj6>=35 && subj6<=100";
+
+    if(x && y && z && a && b && c);
+    
+//if ((subj1>=35 && subj1<=100) && (subj2>=35 && subj2<=100) && (subj3>=35 && subj3<=100) && (subj4>=35 && subj4<=100) && (subj5>=35 && subj5<=100) && (subj6>=35 && subj6<=100));
+
+const result= ((subj1+subj2+subj3+subj4+subj5+subj6)/6);
+
+if(result>=90){
+    alert("grade O")
+}
+else if(result>=80 && result<90){
+     alert("grade A+")
+}
+else if(result>=70 && result<80){
+     alert("grade A")
+}
+else if(result>=60 && result<70){
+     alert("grade B")
+}
+else if(result>=50 && result<60){
+     alert("grade C")
+}
+else if(result>=40 && result<50){
+     alert("grade D")
+}
+else{ 
+    alert("Fail")
+}
+    </script>
+    
+</body>
+</html>
