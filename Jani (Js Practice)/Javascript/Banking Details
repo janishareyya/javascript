@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Banking Details</h1>
+    
+    <button onclick="user_Details()">Account Details </button>
+    <button onclick="credit()">Credit Amount </button>
+    <button onclick="debit()">Debit Amount </button>
+    
+<script>
+
+   let Actual_amount = 5000; 
+    alert("The Actual amount : 5000 ");
+    alert("You're Balance is "+Actual_amount);
+
+function user_Details(){
+    let Actual_Pincode = 78906;
+   let UserAccount_number = +prompt("Enter your account number: ");
+   let Pincode_Number = +prompt("Enter your Pincode Number: ");
+   let User_Name = "Janisha Reyya";
+   if(Pincode_Number === Actual_Pincode){
+    alert("Pincode Matched!!!");
+    alert(UserAccount_number);
+   alert(User_Name);
+   alert("Thank you!!!");
+   }
+   else{
+    alert("Your Pincode is not Matched!!!");
+    
+   }
+
+}
+
+function credit(){
+    let credit_amount = +prompt("credit the amount you want: ");
+    const New_Balance = credit_amount + Actual_amount;
+    alert(New_Balance);
+alert("You're credited Successfully...") 
+alert("Thank You !!!");
+}
+
+function debit(){
+    let Debit_amount = +prompt("Debit the amount you want: ");
+   
+    if(Debit_amount >= Actual_amount) {
+        alert("You have Insuffient amount in your account...");
+    }
+    else{
+        alert("You have Suffient amount, Now you can withdrawal");
+        const Balance_Amount =(Actual_amount - Debit_amount);
+        alert(Balance_Amount); 
+    }  
+    alert("Thank You!!!");
+}
+
+</script> 
+
+</body>
+</html>
